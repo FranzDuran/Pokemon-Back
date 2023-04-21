@@ -1,0 +1,57 @@
+.home {
+    min-height: calc(100vh - 60px - 200px);
+    color: #000538;
+    background-color: #f1f3ff;
+    padding: 25px 0;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "searchBar"
+                         "filter"
+                         "container";
+}
+
+.home.searchBar {
+    grid-area: searchBar;
+    border: 1px solid red;
+}
+
+.searchResultsList {
+    margin: auto;
+    margin-top: 10px;
+    width: 177px;
+    position: absolute;
+    left: 0;
+    right: 42px;
+    text-align: left;
+    padding: 15px 20px;
+
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    border-radius: 24px;
+    z-index: 1;
+}
+
+.home.filter {
+    grid-area: filter;
+    
+}
+
+.home .containerPaginado {
+    grid-area: container;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        grid-template-areas: "searchBar"
+            "filter"
+            "container";
+    }
+}

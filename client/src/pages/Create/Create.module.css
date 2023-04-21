@@ -1,0 +1,288 @@
+.create {
+    min-height: calc(100vh - 60px - 200px);
+    background-color: #f1f3ff;
+    color: #000538;
+    padding: 25px 100px;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerForm {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+.subContainerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subContainerForm h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form .formLocker {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formLocker label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.formLocker input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.formLocker .stylesErrors {
+    font-size: 12px;
+    color: rgb(241, 35, 35);
+}
+
+.formCharacteristics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.characteristicsBoard {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 15px;
+}
+
+.characteristicsBoard div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristicsBoard div label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.characteristicsBoard div input {
+    width: 40%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.formSelect {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.containerSelect select {
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    border: 0.668522px solid #201F54;
+    box-shadow: 0px 1.337043285369873px 8.022259712219238px 0px #14142B14;
+}
+
+.selectDelete {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 0 10px;
+    background: #ececec;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06), 0px 2.4px 3.9px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+}
+
+.selectDelete p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.selectDelete button {
+    width: 18px;
+    height: 18px;
+    background-color: #ef5350b4;
+    border: none;
+    border-radius: 20%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectDelete button:hover {
+    background-color: #c62828;
+    color: #ececec;
+}
+
+.formButton button {
+    border-radius: 4px;
+    padding: 10px 20px;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-color: #ef5350;
+    border: none;
+    cursor: pointer;
+}
+
+.formButton button:hover {
+    background-color: #c62828;
+    color: #ececec;
+}
+
+
+/*---------CARD POKEMON---------*/
+.containerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.characteristics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characteristics div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------LAPTOP----------------*/
+@media screen and (max-width: 1439px) {
+    .containerForm{
+        width: 40%;
+    }
+    .formSelect {
+        gap: 10px;
+    }
+    
+    .containerSelect select {
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .selectDelete {
+        display: flex;
+    }
+    
+    .selectDelete p {
+        font-size: 16px;
+    }
+    
+    .selectDelete button {
+        width: 18px;
+    }
+    
+    .selectDelete button:hover {
+        background-color: #c62828;
+    }
+}
+
+/*-------------TABLET----------------*/
+@media screen and (max-width: 1023px) {
+    .create{
+        padding: 50px;
+    }
+    .containerForm{
+        width: 50%;
+    }
+    .characteristicsBoard div input{
+        width: 25%;
+    }
+
+    .containerCard {
+        width: 38%;
+    }
+}
+
+
+/*-------------PHONE----------------*/
+@media screen and (max-width: 767px){
+    .create{
+        padding: 50px 25px;
+    }
+    .container{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .containerForm{
+        width: 85%;
+    }
+    .characteristicsBoard div input{
+        width: 18%;
+    }
+
+    .formSelect {
+        align-items: center;
+    }
+    
+    .selectDelete {
+        flex-direction: column-reverse;
+    }
+    
+    .selectDelete p {
+        font-size: 15px;
+    }
+    
+    .containerCard {
+        width: 100%;
+    }
+}

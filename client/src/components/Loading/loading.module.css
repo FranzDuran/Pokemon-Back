@@ -1,0 +1,10 @@
+.loading {
+    min-height: calc(100vh - 60px - 315px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img{
+    width: 200px;
+}

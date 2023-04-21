@@ -1,0 +1,269 @@
+:root{
+    --color-fire: #ff7402;
+  --color-grass: #9bcc50;
+  --color-steel: #9eb7b8;
+  --color-water: #4592c4;
+  --color-psychic: #f366b9;
+  --color-ground: #ab9842;
+  --color-ice: #51c4e7;
+  --color-flying: #3dc7ef;
+  --color-ghost: #4d5b64;
+  --color-normal: #a4acaf;
+  --color-poison: #7e0058;
+  --color-rock: #a38c21;
+  --color-fighting: #d56723;
+  --color-dark: #707070;
+  --color-bug: #729f3f;
+  --color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  --color-electric: #bba909;
+  --color-fairy: #fdb9e9;
+  --color-shadow: #7b62a3;
+  --color-unknow: #757575;
+  
+  --color-primary: #006d77;
+  --color-primary-hover: #83c5be;
+}
+  
+  /* Types of Pokemon */
+  .water {
+    background-color: var(--color-water);
+}
+
+.grass {
+    background-color: var(--color-grass);
+}
+
+.poison {
+    background-color: var(--color-poison);
+}
+
+.fire {
+    background-color: var(--color-fire);
+}
+
+.bug {
+    background-color: var(--color-bug);
+}
+
+.dragon {
+    background: var(--color-dragon);
+}
+
+.flying {
+    background-color: var(--color-flying);
+}
+
+.ground {
+    background-color: var(--color-ground);
+}
+
+.steel {
+    background-color: var(--color-steel);
+}
+
+.psychic {
+    background-color: var(--color-psychic);
+}
+
+.ice {
+    background-color: var(--color-ice);
+}
+
+.ghost {
+    background-color: var(--color-ghost);
+}
+
+.normal {
+    background-color: var(--color-normal);
+}
+
+.rock {
+    background-color: var(--color-rock);
+}
+
+.electric {
+    background-color: var(--color-electric);
+}
+
+.fighting {
+    background-color: var(--color-fighting);
+}
+
+.fairy {
+    background-color: var(--color-fairy);
+}
+
+.dark {
+    background-color: var(--color-dark);
+}
+
+
+
+  /* POKEMON*/
+.main-pokemon{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #f1f3ff;
+}
+.header-main-pokemon{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    background: #f8f8f8;
+}
+.container-info-pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    gap: 15px;
+}
+.number-pokemon{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-primary-hover);
+    text-align: center;
+}
+.name-pokemon{
+    text-align: center;
+    font-size: 50px;
+    
+}
+.types-pokemon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10;
+}
+.types-pokemon span{
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.info--pokemon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 170px;
+}
+.group-info{
+    font-weight: 700;
+}
+.container-img-pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%;    
+}
+.container-img-pokemon img{
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+}
+    
+
+  /* Stats */
+.container-stats{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    background: #f8f8f8;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.stat-group{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-group span{
+    flex: 20%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.progress-bar{
+    width: 100%;
+    height: 30px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+
+/*--------------TABLET----------------*/
+@media (max-width: 1023px) {
+    .main-pokemon{
+        padding: 50px;
+    }
+    .header-main-pokemon{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container-info-pokemon{
+        margin-top: 20px;
+    }
+    .container-stats{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        grid-gap: 0;
+        gap: 10px;    
+    }
+    .container-stats h3{
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .stats{
+        width: 95%;
+    }
+    .stat-group{
+        gap: 5px;
+    }
+    .stat-group span{
+        flex: 50%;
+        text-align: left;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .stats{
+        gap: 10px;
+    }
+    .counter-stat{
+        text-align: right !important;
+        flex: 25% !important;
+    }
+}
+
+
+/*--------------PHONE----------------*/
+@media screen and (max-width: 767px) {
+    .main-pokemon{
+        padding: 50px 25PX;
+    }
+}
+
+
+
+
+
+
+
+
+
+
