@@ -4,12 +4,18 @@ const fs = require('fs');
 const path = require('path');
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE,
-  RW_DB_USER, RW_DB_PASSWORD, RW_DB_HOST, RW_DB_PORT, RW_DB_DATABASE
+  RW_DB_USER, RW_DB_PASSWORD, RW_DB_HOST, RW_DB_PORT, RW_DB_DATABASE,
+  EF_DB_USER, EF_DB_PASSWORD, EF_DB_HOST, EF_DB_PORT, EF_DB_DATABASE
 } = process.env;
-//console.log(process.env)
+
+
+// DB RAYLWAY
+//const sequelize = new Sequelize(`postgresql://${RW_DB_USER}:${RW_DB_PASSWORD}@${RW_DB_HOST}:${RW_DB_PORT}/${RW_DB_DATABASE}`, {
+
+// DB ElephantSQL
+const sequelize = new Sequelize(`postgres://${EF_DB_USER}:${EF_DB_PASSWORD}@${EF_DB_HOST}/${EF_DB_DATABASE}`, {
 
 //const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_DATABASE}`, {
-const sequelize = new Sequelize(`postgresql://${RW_DB_USER}:${RW_DB_PASSWORD}@${RW_DB_HOST}:${RW_DB_PORT}/${RW_DB_DATABASE}`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
 });
