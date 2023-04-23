@@ -17,14 +17,8 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//const server = require('./src/app.js');
+const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
-
-const express = require('express');
-const server = express();
-server.get("/", async (req, res) => {
-  res.send("holaaaaaaaaaa")
-})
 
 // Syncing all the models at once.
 conn.sync({ force: false }).then(() => {
