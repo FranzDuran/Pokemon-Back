@@ -22,7 +22,7 @@ const { conn } = require('./src/db.js');
 
 const express = require('express');
 const server = express();
-server.get("/poke", async (req, res) => {
+server.get("/", async (req, res) => {
   res.send("holaaaaaaaaaa")
 })
 
