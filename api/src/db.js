@@ -2,6 +2,8 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
+const pg = require("pg")
+
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE,
   RW_DB_USER, RW_DB_PASSWORD, RW_DB_HOST, RW_DB_PORT, RW_DB_DATABASE,
