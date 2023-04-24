@@ -7,6 +7,8 @@ import Create from './pages/Create/Create';
 import Detail from './pages/detail/Detail';
 import About from './pages/About/About';
 
+import axios from "axios"
+axios.defaults.baseURL = "https://proyecto-pokemon-api.vercel.app/"
 
 
 function App() {
