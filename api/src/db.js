@@ -2,6 +2,8 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
+
+//---VERCEL---
 const pg = require("pg")
 
 const {
@@ -20,7 +22,8 @@ const sequelize = new Sequelize(`postgres://${EF_DB_USER}:${EF_DB_PASSWORD}@${EF
 //const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_DATABASE}`, {
   logging: false, // set to console.log to see the raw SQL queries
   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-  dialectModule: pg,
+
+  dialectModule: pg, //---VERCEL---
 });
 const basename = path.basename(__filename);
 
