@@ -8,7 +8,8 @@ require('./db.js');
 
 const server = express();
 
-const HOST='http://localhost:3000'
+//const HOST='http://localhost:3000'
+const HOST="https://thunderous-khapse-bab9d4.netlify.app"
 
 server.name = 'API';
 
