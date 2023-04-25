@@ -9,7 +9,7 @@ require('./db.js');
 const server = express();
 
 //const HOST='http://localhost:3000'
-const HOST="https://thunderous-khapse-bab9d4.netlify.app"  //url deploy front
+const HOST="https://thunderous-khapse-bab9d4.netlify.app"  //---URL DEPLOY FRONT
 
 server.name = 'API';
 
