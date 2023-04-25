@@ -9,7 +9,8 @@ require('./db.js');
 const server = express();
 
 //const HOST='http://localhost:3000'
-const HOST="https://thunderous-khapse-bab9d4.netlify.app"  //---URL DEPLOY FRONT
+//const HOST="https://thunderous-khapse-bab9d4.netlify.app"  //---URL DEPLOY FRONT
+const HOST="https://proyecto-pokemon-api.vercel.app"
 
 server.name = 'API';
 
