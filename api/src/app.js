@@ -10,7 +10,7 @@ const server = express();
 
 //const HOST='http://localhost:3000'
 //const HOST="https://thunderous-khapse-bab9d4.netlify.app"  //---URL DEPLOY FRONT
-const HOST="https://pokemon-front.netlify.app"
+const HOST="https://pokemon-front.netlify.app" //---URL DEPLOY FRONT
 
 server.name = 'API';
 
